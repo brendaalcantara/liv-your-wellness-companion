@@ -19,9 +19,14 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
             className="space-y-6"
           >
-            <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium text-secondary-foreground">
-              <span className="w-2 h-2 rounded-full bg-mint animate-pulse" />
-              Disponível para Android e iOS
+            <div className="flex flex-wrap gap-2">
+              <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium text-secondary-foreground">
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                Em desenvolvimento
+              </div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium text-secondary-foreground">
+                Android · iPhone (PWA)
+              </div>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading leading-tight text-foreground">
@@ -30,20 +35,20 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Acompanhe seus sintomas, organize seu tratamento e viva com mais autonomia. Tudo em um app feito com cuidado para você.
+              O LIV+ está sendo construído para quem vive com doenças inflamatórias e autoimunes — um app feito com cuidado real, para uma rotina que nem sempre é fácil.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Button variant="hero" size="lg" className="text-base px-8 py-6" asChild>
-                <a href="#download">Baixar Grátis</a>
+                <a href="#funcionalidades">Conheça o app</a>
               </Button>
               <Button variant="heroOutline" size="lg" className="text-base px-8 py-6" asChild>
-                <a href="#pro">Sou Profissional de Saúde</a>
+                <a href="#pro">Para Profissionais</a>
               </Button>
             </div>
 
             <p className="text-sm text-muted-foreground">
-              ✨ Gratuito para sempre · Sem anúncios invasivos
+              ✨ Sempre gratuito para pacientes · Sem anúncios invasivos
             </p>
           </motion.div>
 

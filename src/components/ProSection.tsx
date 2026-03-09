@@ -1,21 +1,19 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Activity, AlertTriangle, QrCode, Lock, FileBarChart } from "lucide-react";
-import proMockup from "@/assets/pro-mockup.png";
+import { Activity, AlertTriangle, QrCode, Lock, FileBarChart, Clock } from "lucide-react";
 
 const proFeatures = [
   { icon: Activity, text: "Dashboard clínico com evolução de BASDAI, dor e adesão" },
-  { icon: AlertTriangle, text: "Alertas inteligentes de piora" },
-  { icon: QrCode, text: "Acesso temporário via código/QR Code" },
-  { icon: Lock, text: "Controle total pelo paciente" },
-  { icon: FileBarChart, text: "Relatórios estruturados para tomada de decisão" },
+  { icon: AlertTriangle, text: "Alertas inteligentes de piora do quadro clínico" },
+  { icon: QrCode, text: "Acesso temporário via código/QR Code, autorizado pelo paciente" },
+  { icon: Lock, text: "Controle total e privacidade garantida pelo paciente" },
+  { icon: FileBarChart, text: "Relatórios estruturados para apoio à tomada de decisão" },
 ];
 
 const ProSection = () => {
   return (
     <section className="py-24 bg-pro-gradient text-primary-foreground" id="pro">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -23,14 +21,23 @@ const ProSection = () => {
             className="space-y-8"
           >
             <div>
-              <span className="inline-block px-3 py-1 rounded-full bg-primary/20 text-sm font-medium mb-4">
-                Para Profissionais
-              </span>
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/20 text-sm font-medium">
+                  Para Profissionais de Saúde
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 text-amber-200 text-sm font-semibold border border-amber-400/30">
+                  <Clock className="w-3.5 h-3.5" />
+                  Em Desenvolvimento
+                </span>
+              </div>
               <h2 className="text-3xl sm:text-4xl font-bold font-heading mb-4">
-                LIV+ Pro: Ferramenta clínica para sua equipe
+                LIV+ Pro: a ferramenta clínica que sua equipe merece
               </h2>
-              <p className="text-primary-foreground/70 text-lg">
-                Acesse informações organizadas dos seus pacientes de forma segura e ética.
+              <p className="text-primary-foreground/80 text-lg leading-relaxed">
+                Estamos construindo uma ferramenta dedicada a profissionais de saúde — para que você tenha acesso organizado, ético e seguro às informações dos seus pacientes, sempre com o consentimento deles.
+              </p>
+              <p className="text-primary-foreground/60 text-sm mt-3">
+                Estamos desenhando cada detalhe para que a ferramenta chegue com qualidade — e respeite o tempo e a privacidade de cada paciente.
               </p>
             </div>
 
@@ -44,25 +51,6 @@ const ProSection = () => {
                 </div>
               ))}
             </div>
-
-            <Button variant="hero" size="lg" className="text-base px-8 py-6" asChild>
-              <a href="#contato">Solicite Acesso ao LIV+ Pro</a>
-            </Button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="flex justify-center"
-          >
-            <img
-              src={proMockup}
-              alt="Dashboard clínico do LIV+ Pro mostrando dados de pacientes"
-              className="w-64 sm:w-80 drop-shadow-2xl"
-              loading="lazy"
-            />
           </motion.div>
         </div>
       </div>

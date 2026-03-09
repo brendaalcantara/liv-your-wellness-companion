@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Funcionalidades", href: "#funcionalidades" },
+  { label: "Como funciona", href: "#como-funciona" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Para Profissionais", href: "#pro" },
-  { label: "Planos", href: "#planos" },
 ];
 
 const Navbar = () => {
@@ -31,9 +30,10 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="hero" size="lg" asChild>
-            <a href="#download">Baixar App</a>
-          </Button>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 text-amber-700 border border-amber-200 px-4 py-1.5 text-xs font-semibold">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+            Em desenvolvimento
+          </span>
         </div>
 
         {/* Mobile toggle */}
@@ -66,9 +66,10 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" asChild>
-                <a href="#download">Baixar App</a>
-              </Button>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 text-amber-700 border border-amber-200 px-4 py-2 text-xs font-semibold">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                Em desenvolvimento
+              </span>
             </div>
           </motion.div>
         )}
