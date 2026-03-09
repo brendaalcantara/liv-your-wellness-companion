@@ -1,9 +1,7 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 const footerLinks = {
-  "Sobre": ["Sobre o LIV+", "Funcionalidades", "Para Profissionais", "Planos"],
-  "Legal": ["Política de Privacidade", "Termos de Uso"],
-  "Contato": ["contato@livmais.com.br", "Blog"],
+  "Sobre": ["Sobre o LIV+", "Funcionalidades", "Como funciona", "Para Profissionais"],
 };
 
 const Footer = () => {
