@@ -10,5 +10,7 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+Sitemap: https://livmais.com.br/sitemap.xml
+
 User-agent: *
 Allow: /
