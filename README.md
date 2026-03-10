@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# LIV+
 
-## Project info
+**Seu companheiro no cuidado com doenças crônicas.**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+O LIV+ é um aplicativo em desenvolvimento voltado para pessoas que vivem com doenças inflamatórias e autoimunes — como espondilite anquilosante, artrite reumatoide, lúpus e outras condições crônicas. O objetivo é oferecer uma ferramenta acolhedora, acessível e gratuita para pacientes acompanharem sua saúde com mais autonomia.
 
-## How can I edit this code?
+> 🚧 O app está em desenvolvimento ativo. Este repositório contém o site institucional/landing page do projeto.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Sobre o projeto
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+A maioria dos aplicativos de saúde é genérica. O LIV+ foi pensado para quem enfrenta uma rotina com dor, fadiga, rigidez e tratamentos complexos — com uma interface simples, sem jargões, e sem cobrar por isso.
 
-Changes made via Lovable will be committed automatically to this repo.
+**Para pacientes, o LIV+ será sempre gratuito.**
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Funcionalidades previstas no app
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Diário de sintomas** — registro rápido de dor, fadiga, rigidez, humor e BASDAI
+- **Calendário de saúde** — medicamentos, aplicações, exames e consultas com lembretes inteligentes
+- **Gráficos e insights** — evolução da dor, adesão ao tratamento e detecção de padrões de crise
+- **Relatórios médicos** — geração automática de histórico para levar às consultas
+- **Modo Crise** — acesso rápido a técnicas de respiração, checklist de emergência e contatos de apoio
+- **Ferramentas de autocuidado** — mini alongamentos, meditações guiadas e sugestões de rotina
+- **Modo Cuidador/Familiar** — acompanhamento por pessoa de confiança, com controle total pelo paciente
+- **LIV+ Pro** *(em desenvolvimento)* — dashboard clínico para profissionais de saúde, com acesso autorizado pelo paciente via QR Code
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Plataformas
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+| Plataforma | Tipo | Status |
+|---|---|---|
+| Android | App nativo | Em desenvolvimento |
+| iPhone | PWA (via Safari) | Em desenvolvimento |
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Stack do site
+
+- [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+## Rodando localmente
+
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Acesse em `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Deploy
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+O site é publicado automaticamente via GitHub Actions na branch `gh-pages` a cada push na `main`, e servido em [home.livmais.com.br](https://home.livmais.com.br).
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Contato
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+contato@livmais.com.br
